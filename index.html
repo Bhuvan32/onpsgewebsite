@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Video Player</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="logo"><img src="images/logo.png" alt=""></div>
+      <div class="video-players">
+         <div class="video-player">
+            <div class="video" id="video-player">
+               <video id="videoId" width="700"></video>
+               <div class="buttons">
+                  <button id="play"><i class="fa fa-play-circle "></i></button>
+                  <button id="volume"><i class="fa fa-volume-up"></i></button>
+                  <input id="volSlider" class="vol_slider" type="range" min="0" max="100" value="100" step="1">
+                  <button id="playnext"><i class="fa fa-forward"></i></button>
+                  <button id="playprevious"><i class="fa fa-backward"></i></button>
+                  <button id="fullScreen"><i class="fa fa-compress"></i></button>	
+                  <input type="range" value="0" id="progressId" step="1" class="myslider">
+                  <div id="progressId_1" class="myslider_1"></div>
+                  <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+               </div>
+            </div>
+         </div>
+         <ul id="playlist">
+            <li data-movieurl="videos/MVC.mp4"><img src="images/tutorial.png" alt=""></li>
+            <li data-movieurl="videos/SampleVideo.mp4"><img src="images/sample.png" alt=""></li>
+         </ul>
+      </div>
+      <script src="js/script.js"></script>
+   </body>
+</html>

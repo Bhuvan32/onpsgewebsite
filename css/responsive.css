@@ -1,0 +1,23 @@
+@media(max-width: 767px) {
+	.video-player{
+		float: none;
+	}
+	video{
+		width: 600px
+	}
+}
+
+@media(max-width: 992px) {
+	.video-player{
+		float: none;
+		width: 300px;
+	}
+}
+
+@media(max-width: 1199px) {
+	.video-player{
+		float: none;
+		width: 600px;
+	}
+}
+
